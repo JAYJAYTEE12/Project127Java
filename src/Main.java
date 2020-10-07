@@ -1,5 +1,10 @@
+import Command.CommandManager;
+
 public class Main {
-    public static void main(String args[]){
-        System.out.println("Hello World!");
+    public static void main(String[] args){
+        CommandManager commandManager = new CommandManager();
+
+        commandManager.outputAvailableItems();
+        commandManager.outputCommandLine(null);
     }
 }
