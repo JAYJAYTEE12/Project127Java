@@ -5,6 +5,6 @@ public class Main {
         CommandManager commandManager = new CommandManager();
 
         commandManager.outputAvailableItems();
-        commandManager.outputCommandLine(null);
+        commandManager.outputCommandLine();
     }
 }

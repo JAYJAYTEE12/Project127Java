@@ -43,10 +43,10 @@ public class CommandManager {
             System.out.println(entry.getKey() + " --> " + entry.getValue());
         }
 
-        menuItems.clear(); // <-- Avoids duplicates
+        //menuItems.clear(); // <-- Avoids duplicates
     }
 
-    public void outputCommandLine(ArrayList<CommandObject> commands){
+    public void outputCommandLine(){
 
 
         System.out.println(" ");
@@ -65,7 +65,7 @@ public class CommandManager {
         if(output.equalsIgnoreCase("exit") || output.equalsIgnoreCase("quit")) { System.exit(1); }
         else{
             System.out.println("Unknown Command! Please try again");
-            outputCommandLine(null);
+            findCommandLine("exit");
         }
     }
 
@@ -75,7 +75,7 @@ public class CommandManager {
             System.out.println(" --- --------------- ---");
             System.out.println(" ");
             outputAvailableItems();
-            outputCommandLine(null);
+            outputCommandLine();
         }
     }
 

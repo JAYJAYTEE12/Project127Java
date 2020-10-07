@@ -8,10 +8,10 @@ public class DummyCommand extends CommandObject {
         super("Dummy", "This is a dummy command.", "dummy");
     }
 
-    public void execute(){
+    public void execute(){ // <-- Make sure you add this to every command class
         System.out.println("You executed a dummy command!");
 
-        CommandManager commandManager = new CommandManager();
-        commandManager.findCommandLine("exit");
+        CommandManager commandManager = new CommandManager(); // <-- New command manager instance
+        commandManager.findCommandLine("exit"); // <-- Go back
     }
 }
