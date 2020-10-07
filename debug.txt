@@ -1,0 +1,7 @@
+10/07 14:35:22 Successfully created logger file!
+10/07 14:35:26 Starting the downgrade process... - 2
+10/07 14:35:26 Starting the downgrade process... - 2
+10/07 14:36:31 Starting the downgrade process... - 2
+10/07 14:39:37 Starting the downgrade process... - 2
+10/07 14:42:41 Starting the downgrade process... - 2
+10/07 14:53:01 Executed the dummy command! - 1

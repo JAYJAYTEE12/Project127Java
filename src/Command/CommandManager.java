@@ -1,5 +1,6 @@
 package Command;
 
+import Command.Items.DowngradeCommand;
 import Command.Items.DummyCommand;
 
 import java.util.ArrayList;
@@ -17,6 +18,9 @@ public class CommandManager {
 
         if(!menuObjects.contains(new DummyCommand())) {
             menuObjects.add(new DummyCommand()); // <-- Registering the command
+        }
+        if(!menuObjects.contains(new DowngradeCommand())) {
+            menuObjects.add(new DowngradeCommand()); // <-- Registering the command
         }
 
         for (CommandObject object : menuObjects) {
